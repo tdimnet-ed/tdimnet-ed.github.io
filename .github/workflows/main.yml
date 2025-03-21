@@ -1,0 +1,12 @@
+name: Deploying project on GH Pages
+
+on:
+  push:
+     branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Running ls
+        run: ls -al
