@@ -2,13 +2,17 @@ name: Deploying project on GH Pages
 
 on:
   push:
-     branches: ["main"]
+    branches: ["main"]
 
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Ici
       - name: testing ls
         run: ls -al
-        
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: testing ls
+        run: ls -al
